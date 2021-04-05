@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# インストールされているgitのアンインストール
+yum remove git
+
+# install document
+# https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB
+
+# makefile用
+yum install autoconf
+
+# 公式の推奨
+yum install curl-devel expat-devel gettext-devel \
+  openssl-devel perl-devel zlib-devel
+
+GIT_VERSION="2.31.1"
+
+curl -OL https://github.com/git/git/archive/refs/tags/v$GIT_VERSION.tar.gz
+
+tar -zxf v$GIT_VERSION.tar.gz
+rm -f v$GIT_VERSION.tar.gz
+
+cd git-$GIT_VERSION
+
+pwd
+
+make configure
+
+# help ./configure --help
+./configure --prefix=/usr
+
+make all doc info
+make install
+
+cd ..
+rm -rf git-$GIT_VERSION
