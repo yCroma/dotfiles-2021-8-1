@@ -2,3 +2,5 @@
 .vim/plugged
 .vim/sessions
 .vim/.netrwhist
+.vim/pack/plugins/start/
+.vim/ftplugin
