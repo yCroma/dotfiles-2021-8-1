@@ -8,6 +8,10 @@ do
 	LINK_PATH=~/${DOTFILE}
 	USE_FILE=~/dotfiles/${DOTFILE}
 
+	if [[ ${DOTFILE} =~ ^(\.git) ]]; then
+		continue
+	fi
+
 	if [ -e ${LINK_PATH} ]; then
 		rm -rf ${LINK_PATH}
 	fi
