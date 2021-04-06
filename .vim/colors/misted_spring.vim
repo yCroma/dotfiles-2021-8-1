@@ -15,16 +15,21 @@ highlight clear
 
 " main color
 " gray 242
+" black 233
 " white 15
+" purewhite 255
 " lightblue 4
 " blue 12
 " pink 219
 " yellow 3
 " orange 180
 
+" :highlight
 highlight Pmenu ctermfg=255 ctermbg=233
+highlight SignColumn ctermfg=255 ctermbg=NONE
+
 " :h highlight-groups
-highlight LineNr ctermfg=15
+highlight LineNr ctermfg=15 ctermbg=NONE
 highlight CursorLineNr ctermfg=219
 highlight CursorLine cterm=underline
 highlight Folded ctermfg=242 ctermbg=NONE
@@ -51,3 +56,8 @@ highlight vimHiCtermFgBg ctermfg=15
 
 " PreProc
 highlight vimOption ctermfg=15
+
+" gitgutter
+highlight GitGutterAdd ctermfg=130
+highlight GitGutterChange ctermfg=28
+
