@@ -22,6 +22,7 @@ highlight clear
 " yellow 3
 " orange 180
 
+highlight Pmenu ctermfg=255 ctermbg=233
 " :h highlight-groups
 highlight LineNr ctermfg=15
 highlight CursorLineNr ctermfg=219
