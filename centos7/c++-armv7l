@@ -1,0 +1,25 @@
+#!/bin/sh
+
+GCC_VERSION="gcc-10.2.0"
+# 最新版の c++ のインストール
+yum install wget bzip2
+yum install gcc gcc-c++
+curl -OL http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/$GCC_VERSION/$GCC_VERSION.tar.gz
+tar -xzf $GCC_VERSION.tar.gz 
+cd $GCC_VERSION
+./contrib/download_prerequisites
+mkdir build
+cd build
+../configure --enable-languages=c,c++ --prefix=/usr/local --disable-bootstrap --disable-multilib --with-float=hard
+# make -j4
+make
+make install
+
+cd ../../
+
+yum remove gcc gcc-c++
+rm -rf $GCC_VERSION*
+
+echo "/usr/local/lib" >> /etc/ld.so.conf.d/usr-local-lib64.conf
+ldconfig -v
+# reboot
