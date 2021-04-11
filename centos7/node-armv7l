@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# https://nodejs.org/ja/download/
+# Linux Binaries (ARM)
+# Raspberry Pi 1 Model BにNode.jsをインストールする
+# https://qiita.com/mininobu/items/c07f59a8210e8c71280e
+
+yum install xz
+curl -OL https://nodejs.org/dist/v14.16.1/node-v14.16.1-linux-armv7l.tar.xz
+tar -Jxf node-v14.16.1-linux-armv7l.tar.xz
+cd node-v14.16.1-linux-armv7l
+cp -R * /usr/local
+
+cd ..
+rm -rf node-v14.16.1-linux-armv7l*
