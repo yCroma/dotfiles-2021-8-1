@@ -1,0 +1,14 @@
+#!/bin/sh
+
+TIG_VERSION="tig-2.5.3"
+curl -OL https://github.com/jonas/tig/releases/download/$TIG_VERSION/$TIG_VERSION.tar.gz
+tar -xzf $TIG_VERSION.tar.gz
+cd $TIG_VERSION
+
+# for cc
+yum install gcc
+make prefix=/usr/local
+make install prefix=/usr/local
+
+cd ..
+rm -rf $TIG_VERSION*
