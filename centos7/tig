@@ -5,8 +5,12 @@ curl -OL https://github.com/jonas/tig/releases/download/$TIG_VERSION/$TIG_VERSIO
 tar -xzf $TIG_VERSION.tar.gz
 cd $TIG_VERSION
 
-# for cc
-yum install gcc
+# 日本語対応させてビルド
+# url : https://qiita.com/tdrk/items/06b21bedff3244e21aae
+# for cc aclocal
+yum install gcc automake
+./autogen.sh
+./configure --without-ncurses
 make prefix=/usr/local
 make install prefix=/usr/local
 
