@@ -34,3 +34,7 @@ make install
 
 cd ..
 rm -rf git-$GIT_VERSION
+
+# git で利用するデフォルトのエディターを vim に変更
+# url : https://qiita.com/hirokita117/items/9e027c8e40ae259dc32a
+git config --global core.editor "vim"
