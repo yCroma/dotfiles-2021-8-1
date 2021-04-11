@@ -26,6 +26,7 @@ highlight clear
 
 " :highlight
 highlight Pmenu ctermfg=255 ctermbg=233
+highlight PmenuSel cterm=underline ctermfg=255 ctermbg=233
 highlight SignColumn ctermfg=255 ctermbg=NONE
 
 " :h highlight-groups
