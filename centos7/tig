@@ -12,3 +12,6 @@ make install prefix=/usr/local
 
 cd ..
 rm -rf $TIG_VERSION*
+
+# if you want to uninstall
+# make uninstall prefix=/usr/local
