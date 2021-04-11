@@ -13,4 +13,10 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
+" fzf
+Plug 'ctrlpvim/ctrlp.vim'
+
+" popup buffer list
+Plug 'yCroma/pobls.vim'
+
 call plug#end()
