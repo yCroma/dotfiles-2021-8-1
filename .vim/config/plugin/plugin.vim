@@ -19,4 +19,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 " popup buffer list
 Plug 'yCroma/pobls.vim'
 
+" filer
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-hijack.vim'
+
 call plug#end()
