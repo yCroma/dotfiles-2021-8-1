@@ -1,4 +1,8 @@
 #!/bin/sh
+# 【CentOS7】gccをソースからインストール
+# url : https://www.server-memo.net/memo/gcc-install.html
+# RaspberryPi2 CentOS7でgcc-4.9.4 のビルドがうまくいかない→できました！
+# url : https://qiita.com/Delum/items/a82da10b53d5e3f65317
 
 GCC_VERSION="gcc-10.2.0"
 # 最新版の c++ のインストール
