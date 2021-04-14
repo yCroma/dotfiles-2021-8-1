@@ -21,6 +21,5 @@ Plug 'yCroma/pobls.vim'
 
 " filer
 Plug 'lambdalisue/fern.vim'
-Plug 'lambdalisue/fern-hijack.vim'
 
 call plug#end()
