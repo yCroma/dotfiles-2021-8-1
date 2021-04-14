@@ -23,4 +23,7 @@ Plug 'yCroma/pobls.vim'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-hijack.vim'
 
+" lexiv
+Plug 'mattn/vim-lexiv'
+
 call plug#end()
