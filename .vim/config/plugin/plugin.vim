@@ -26,4 +26,7 @@ Plug 'lambdalisue/fern-hijack.vim'
 " lexiv
 Plug 'mattn/vim-lexiv'
 
+" VimHelpGenerator
+Plug 'LeafCage/vimhelpgenerator'
+
 call plug#end()
