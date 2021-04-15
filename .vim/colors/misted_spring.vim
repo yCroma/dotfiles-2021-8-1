@@ -58,6 +58,9 @@ highlight vimHiCtermFgBg ctermfg=15
 " PreProc
 highlight vimOption ctermfg=15
 
+" only vim
+highlight vimUsrCmd ctermfg=15
+
 " gitgutter
 highlight GitGutterAdd ctermfg=130
 highlight GitGutterChange ctermfg=28
