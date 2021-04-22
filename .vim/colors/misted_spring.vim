@@ -50,6 +50,7 @@ highlight Identifier cterm=NONE ctermfg=15
 " Statement
 highlight vimFunction ctermfg=15
 highlight vimIsCommand ctermfg=6
+highlight htmlTagName ctermfg=15
 
 " Type
 highlight vimHiCterm ctermfg=15
@@ -60,6 +61,8 @@ highlight vimOption ctermfg=15
 
 " only vim
 highlight vimUsrCmd ctermfg=15
+highlight vimUserFunc ctermfg=15
+highlight vimFuncBody ctermfg=15
 
 " gitgutter
 highlight GitGutterAdd ctermfg=130
