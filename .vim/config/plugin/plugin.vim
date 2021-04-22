@@ -29,4 +29,7 @@ Plug 'mattn/vim-lexiv'
 " VimHelpGenerator
 Plug 'LeafCage/vimhelpgenerator'
 
+" emmet
+Plug 'mattn/emmet-vim'
+
 call plug#end()
