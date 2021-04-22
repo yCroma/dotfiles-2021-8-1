@@ -9,6 +9,7 @@ set tabstop=2
 set shiftwidth=2
 set smartindent
 " set expandtab  " tab exchange space
+set hidden
 
 " color scheme
 "colorscheme cterm
@@ -31,7 +32,7 @@ set splitright
 
 " folding
 set foldmethod=indent
-set foldlevel=100
+set foldlevel=3
 set foldcolumn=1
 
 " Hack #84: バッファの表示設定を保存する
