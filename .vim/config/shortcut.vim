@@ -1,5 +1,8 @@
 " shortcut.vim
 
+noremap j gj
+noremap k gk
+
 " terminal
 " command! Terminal call popup_create(term_start([&shell], #{ hidden:1, term_finish: 'close'}), #{ border: [2,2,2,2], borderhighlight: ['white'] , minwidth: winwidth(0)/2, minheight: &lines/2 } )
 command! Terminal call popup_create( term_start([&shell], 
