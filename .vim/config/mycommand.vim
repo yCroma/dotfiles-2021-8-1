@@ -9,4 +9,6 @@ command! Terminal call popup_create( term_start([&shell],
 
 command! T :terminal ++close
 command! Tv :vert terminal ++close
+command! TC :terminal ++curwin ++close
+command! TN :tab terminal ++close
 
