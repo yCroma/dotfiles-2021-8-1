@@ -2,6 +2,17 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
+# ターミナルプロンプトの表示・色の変更
+# git や PROMPT_COMMANDは下の記事
+# url: https://qiita.com/hmmrjn/items/60d2a64c9e5bf7c0fe60
+# Bashプロンプトの変更
+# url: https://qiita.com/zaburo/items/9194cd9eb841dea897a0
+# Macのターミナル（bash）を最低限色付けする
+# url: https://qiita.com/lemtosh469/items/81919186611ac68b11c8
+
+# 更新点：
+# Bashプロンプト：ディレクトリパスのイニシャルを取得する方法
+# url: https://www.javaer101.com/en/article/96142520.html
 
 source ~/dotfiles/shell/git_prompt.sh
 
