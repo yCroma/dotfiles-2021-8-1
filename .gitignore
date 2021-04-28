@@ -4,3 +4,6 @@
 .vim/.netrwhist
 .vim/pack/plugins/start/
 .vim/ftplugin
+.config/fish
+.config/lazygit/*
+!.config/lazygit/config.yml
