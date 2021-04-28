@@ -7,3 +7,4 @@
 .config/fish
 .config/lazygit/*
 !.config/lazygit/config.yml
+*.swp
