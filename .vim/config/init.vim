@@ -9,7 +9,9 @@ set tabstop=2
 set shiftwidth=2
 set smartindent
 " set expandtab  " tab exchange space
+
 set hidden
+set noswapfile
 
 " color scheme
 "colorscheme cterm
