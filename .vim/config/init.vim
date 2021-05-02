@@ -26,6 +26,8 @@ set hlsearch
 " Preserve last editing position
 if has("autocmd")
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exec "normal! g'\"" | endif
+
+	autocmd FileType vim set foldmethod=marker
 endif
 
 " direction open buffer
