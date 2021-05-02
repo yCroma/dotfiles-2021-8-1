@@ -15,7 +15,8 @@ set noswapfile
 
 " color scheme
 "colorscheme cterm
-colorscheme misted_spring
+"colorscheme misted_spring
+colorscheme staby
 
 set scrolloff=8
 
