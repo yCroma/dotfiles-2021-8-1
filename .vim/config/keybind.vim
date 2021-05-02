@@ -6,8 +6,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
-nnoremap <C-i> gt
-nnoremap <C-o> gT
+nnoremap <C-o> gt
+nnoremap <C-i> gT
 
 tnoremap <C-j> <C-w>j
 tnoremap <C-k> <C-w>k
