@@ -33,7 +33,7 @@ highlight clear
 " red 160
 " }}}
 
-" :highlight
+" :highlight {{{
 " :h highlight-groups
 hi Normal cterm=NONE ctermfg=254 ctermbg=234
 "hi Cursor
@@ -41,7 +41,7 @@ hi Normal cterm=NONE ctermfg=254 ctermbg=234
 "hi VisualNOS
 "hi Search	
 hi Folded cterm=NONE ctermbg=232
-"hi Title
+hi Title cterm=NONE ctermfg=254
 "hi StatusLine
 "hi VertSplit
 "hi StatusLineNC
@@ -50,13 +50,13 @@ hi LineNr ctermfg=241 ctermbg=232
 "hi WarningMsg
 "hi ErrorMsg	
 
-
 "hi CursorLine
 hi CursorLinenr cterm=NONE ctermfg=11 ctermbg=232
 hi SignColumn cterm=NONE ctermbg=232
 hi MatchParen cterm=NONE ctermfg=228 ctermbg=232
 hi Pmenu	cterm=NONE ctermfg=230 ctermbg=238
-hi PmenuSel	cterm=underline ctermfg=NONE ctermbg=NONE
+hi PmenuSel	cterm=underline ctermfg=230 ctermbg=238
+"}}}
 
 
 " h:group-name
@@ -70,8 +70,12 @@ hi Number	 cterm=NONE ctermfg=73
 hi Float	 cterm=NONE ctermfg=103
 " }}}
 
-hi Identifier cterm=NONE ctermfg=99
-hi Function cterm=NONE ctermfg=214
+" *Identifier {{{
+" In HTML, Function is used in the start tag and Identifier is used in the end tag.
+" In this case, the same color is spacified for Function and Identifier so that there is no difference in color
+hi Identifier cterm=NONE ctermfg=226
+hi Function cterm=NONE ctermfg=226
+" }}}
 
 " *Statement {{{
 hi Statement cterm=NONE ctermfg=160
@@ -79,9 +83,9 @@ hi Conditional cterm=NONE ctermfg=214
 hi Repeat ctermfg=NONE ctermfg=226
 hi Label cterm=NONE ctermfg=45
 hi Operator cterm=NONE ctermfg=123
+hi Keyword cterm=NONE ctermfg=214
 " }}}
 
-hi Keyword cterm=NONE ctermfg=254
 
 hi PreProc cterm=NONE ctermfg=231
 
