@@ -26,3 +26,6 @@ noremap k gk
 " push Esc two times, stop hlsearch
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 
+" <C-c> to <Esc>
+inoremap <C-c> <Esc>
+
