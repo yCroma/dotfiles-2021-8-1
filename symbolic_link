@@ -8,6 +8,11 @@ do
 	LINK_PATH=~/${DOTFILE}
 	USE_FILE=~/dotfiles/${DOTFILE}
 
+	if [ ${DOTFILE} == ".gitignore_global" ]; then
+		ln -sfv ${USE_FILE} ${LINK_PATH}
+		git config --global core.excludesfile ~/.gitignore_global
+	fi
+
 	if [[ ${DOTFILE} =~ ^(\.git) ]]; then
 		continue
 	fi
