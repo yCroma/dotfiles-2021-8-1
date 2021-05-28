@@ -63,6 +63,10 @@ highlight vimOption ctermfg=15
 highlight vimUsrCmd ctermfg=15
 highlight vimUserFunc ctermfg=15
 highlight vimFuncBody ctermfg=15
+highlight vimOperParen ctermfg=15
+
+" docker
+highlight dockerfileFrom ctermfg=15
 
 " gitgutter
 highlight GitGutterAdd ctermfg=130
