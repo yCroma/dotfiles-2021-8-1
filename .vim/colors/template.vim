@@ -9,25 +9,65 @@ autocmd BufEnter * hi User4 cterm=bold ctermfg=black ctermbg=darkmagenta " Visua
 " colorscheme
 set background=dark
 
-syntax enable
-" syntax reset
-highlight clear
+" main color
+" white 255
+" gray 242
+" yellow 220
 
+" :highlight
 " :h highlight-groups
-"highlight LineNr ctermfg=15
-"highlight CursorLineNr cterm=bold ctermfg=9
-"highlight CursorLine cterm=underline							
+hi Normal cterm=NONE ctermfg=255
+hi Cursor
+hi Visual	
+hi VisualNOS
+hi Search	
+hi Folded	
+hi Title
+hi StatusLine
+hi VertSplit
+hi StatusLineNC
+hi LineNr	
+hi SpecialKey
+hi WarningMsg
+hi ErrorMsg	
 
-" :h group-name
-" normal
 
-"highlight Comment ctermfg=242
-"highlight Statement ctermfg=12
-"highlight Type ctermfg=4
-"highlight Constant ctermfg=6
-"highlight PreProc ctermfg=3
+hi CursorLine	
+hi MatchParen
+hi Pmenu	
+hi PmenuSel	
 
-" vim
-" Type
-"highlight vimHiCterm ctermfg=15
-"highlight vimHiCtermFgBg ctermfg=15
+
+" h:group-name
+hi Comment cterm=NONE ctermfg=242
+
+hi Constant cterm=NONE ctermfg=242
+hi String cterm=NONE ctermfg=242
+hi Character cterm=NONE ctermfg=242
+hi Number	 cterm=NONE ctermfg=242
+
+hi Identifier cterm=NONE ctermfg=242
+hi Function cterm=NONE ctermfg=242
+
+hi Statement cterm=NONE ctermfg=242
+hi Keyword cterm=NONE ctermfg=242
+
+hi PreProc cterm=NONE ctermfg=242
+
+hi Type	 cterm=NONE ctermfg=242
+
+hi Special cterm=NONE ctermfg=242
+
+hi Underlined cterm=NONE ctermfg=242
+
+hi Ignore cterm=NONE ctermbg=242
+
+hi Error cterm=NONE ctermfg=242 ctermbg=NONE
+
+hi Todo	 cterm=NONE ctermfg=242 ctermbg=NONE
+
+
+" Links
+hi! link FoldColumn		Folded
+hi! link CursorColumn	CursorLine
+hi! link NonText		LineNr
